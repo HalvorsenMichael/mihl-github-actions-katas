@@ -3,7 +3,6 @@ on: push
 env: # Set the secret as an input
   docker_username: ${{ github.actor }} 
   docker_password: ${{ secrets.GITHUB_TOKEN }} #Needs to be set to be made available to the workflow
-  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 jobs:
   Build:
     runs-on: ubuntu-latest
