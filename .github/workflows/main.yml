@@ -19,6 +19,7 @@ jobs:
           include-hidden-files: true
   Linter:
     runs-on: ubuntu-latest
+    needs: [Build]
     steps:
       - name: Download repo
         uses: actions/download-artifact@v4
